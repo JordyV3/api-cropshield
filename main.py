@@ -20,8 +20,40 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL = tf.keras.models.load_model("saved_models/1")
-CLASS_NAMES = ["Planta Chile", "Planta Enferma Trips", "Planta Saludable"]
+# Pruebas satisfactorias entre 52% y 92%
+# MODEL = tf.keras.models.load_model("saved_models/v3-20")
+# CLASS_NAMES = ["Planta Enferma Trips", "Planta Saludable"]
+
+# Pruebas satisfactorias entre 55% y 98%
+# MODEL = tf.keras.models.load_model("saved_models/v4-25")
+# CLASS_NAMES = ["Planta Enferma Trips", "Planta Saludable"]
+
+# Pruebas satisfactorias entre 58% y 99%
+# MODEL = tf.keras.models.load_model("saved_models/v5-30")
+# CLASS_NAMES = ["Planta Enferma Trips", "Planta Saludable"]
+
+# Pruebas satisfactorias entre 68% y 99%
+# MODEL = tf.keras.models.load_model("saved_models/v6-40")
+# CLASS_NAMES = [ "Planta Enferma Trips", "Planta Saludable"]
+
+# Pruebas satisfactorias entre 78% y 99%
+# MODEL = tf.keras.models.load_model("saved_models/v7-50")
+# CLASS_NAMES = ["Planta Enferma Trips", "Planta Saludable"]
+
+# Pruebas satisfactorias entre 89% y 99%
+# MODEL = tf.keras.models.load_model("saved_models/v8-75")
+# CLASS_NAMES = ["Planta Enferma Trips", "Planta Saludable"]
+
+# Pruebas satisfactorias entre 91% y 99%
+# MODEL = tf.keras.models.load_model("saved_models/v9-100")
+# CLASS_NAMES = ["Planta Enferma Trips", "Planta Saludable"]
+
+# Pruebas satisfactorias entre 95% y 99%
+# MODEL = tf.keras.models.load_model("saved_models/v10-150")
+# CLASS_NAMES = ["Planta Enferma Trips", "Planta Saludable"]
+
+MODEL = tf.keras.models.load_model("saved_models/v8-75")
+CLASS_NAMES = ["Planta Enferma Trips", "Planta Saludable"]
 @app.get("/ping")
 async def ping():
     return "Detecctor de Trips"
