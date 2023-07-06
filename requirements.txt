@@ -1,8 +1,7 @@
-install tensorflow
 fastapi
 uvicorn
 python-multipart
 pillow
-tensorflow-serving-api==2.5.0
+pip install tensorflow==2.12.*
 matplotlib
 numpy
